@@ -1,6 +1,6 @@
 <script>
   let feed = [];
-  fetch(`http://localhost:8080/api/posts/all`)
+  fetch(`/api/posts/all`)
     .then((res) => res.json())
     .then((data) => {
       feed = data;
